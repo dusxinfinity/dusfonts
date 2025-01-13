@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dus Fonts | Google Font Explorer</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🅳</text></svg>"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header Section -->
+      <header class="header">
+        <div class="logo-container">
+          <i class="fas fa-font logo-icon"></i>
+          <h1 class="logo-text">Dus Fonts</h1>
+        </div>
+
+        <div class="search-container">
+          <input
+            type="text"
+            id="font-search"
+            class="search-input"
+            placeholder="Search fonts..."
+          />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Fonts Grid -->
+        <div id="fonts-container" class="fonts-grid">
+          <!-- Fonts will be dynamically populated here -->
+        </div>
+
+        <!-- Load More Button -->
+        <button id="load-more-btn" class="load-more-btn">
+          Load More Fonts
+        </button>
+      </main>
+
+      <!-- Font Preview Modal -->
+      <div id="fontPreviewModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="modalFontName"></h2>
+            <span id="closeModal" class="close-btn">&times;</span>
+          </div>
+          <div class="modal-body">
+            <div id="modalFontPreview">
+              <div class="preview-size">
+                <h3>Small Text (16px)</h3>
+                <p style="font-size: 16px">
+                  The quick brown fox jumps over the lazy dog
+                </p>
+              </div>
+              <div class="preview-size">
+                <h3>Medium Text (24px)</h3>
+                <p style="font-size: 24px">
+                  The quick brown fox jumps over the lazy dog
+                </p>
+              </div>
+              <div class="preview-size">
+                <h3>Large Text (36px)</h3>
+                <p style="font-size: 36px">
+                  The quick brown fox jumps over the lazy dog
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="inspirational-quotes-section">
+      <div class="quotes-container">
+        <div class="quote-card">
+          <div class="quote-avatar-container">
+            <img id="author-avatar" src="" alt="Author" class="author-avatar" />
+          </div>
+          <div class="quote-content">
+            <blockquote id="quote-text" class="quote-text"></blockquote>
+            <div class="quote-meta">
+              <div id="quote-author" class="quote-author"></div>
+              <div id="author-profession" class="author-profession"></div>
+            </div>
+          </div>
+        </div>
+        <div class="quote-progress">
+          <div class="progress-bar" id="quote-progress"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-container">
+        <div class="section-header">
+          <h2 class="section-title">Discover Dus Fonts</h2>
+          <p class="section-subtitle">Your Ultimate Google Font Explorer</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>Easy Font Search</h3>
+            <p>
+              Quickly find the perfect font with our intuitive search
+              functionality.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-eye"></i>
+            </div>
+            <h3>Font Preview</h3>
+            <p>Instantly preview fonts in multiple sizes and styles.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-copy"></i>
+            </div>
+            <h3>Quick Import</h3>
+            <p>Easily copy font import links with a single click.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Seamless experience across all devices and screen sizes.</p>
+          </div>
+        </div>
+
+        <div class="how-it-works">
+          <h3 class="How">How Dus Fonts Works</h3>
+          <div class="steps-container">
+            <div class="step">
+              <span class="step-number">1</span>
+              <p>Browse through our curated collection of Google Fonts</p>
+            </div>
+            <div class="step">
+              <span class="step-number">2</span>
+              <p>Use search to find fonts by name or style</p>
+            </div>
+            <div class="step">
+              <span class="step-number">3</span>
+              <p>Preview fonts in different sizes and styles</p>
+            </div>
+            <div class="step">
+              <span class="step-number">4</span>
+              <p>Copy font import link with a single click</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="creator-section">
+          <div class="creator-profile">
+            <div class="creator-avatar">
+              <img
+                src="https://i.pinimg.com/736x/54/05/0e/54050e97b3038ad96864d533051804e2.jpg"
+                alt="Dus Mamud"
+              />
+            </div>
+            <div class="creator-info">
+              <h3>Dus Mamud</h3>
+              <p>Developer</p>
+              <div class="social-linkss">
+                <a href="https://github.com/beingdusmamud" class="social-icons"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/dvmx_19/"
+                  class="social-icons"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://codepen.io/Dus-Mamud" class="social-icons"
+                  ><i class="fab fa-codepen"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="creator-bio">
+            <p>
+              A passionate web developer dedicated to creating innovative and
+              user-friendly digital experiences. With a keen eye for design and
+              a love for typography, I created Dus Fonts to simplify font
+              exploration for designers and developers worldwide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Dus Fonts. All Rights Reserved.</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/dusxinfinity"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/dus.infinity/"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://codepen.io/Dus-Infinity"
+            target="_blank"
+            class="social-icon"
+          >
+            <i class="fab fa-codepen"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="loader">
+        <span>D</span>
+        <span>u</span>
+        <span>s</span>
+        <span>F</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>s</span>
+      </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
